@@ -36,146 +36,32 @@
 	\sort[direction=descending]{\field{year}}
 }
 
-\name{John Smith} % Your name
-\address{123 Broadway \\ City, State 12345} % Your address
-\address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
+\name{Clayton Stanley} % Your name
+\address{2440 North Boulevard \\ Houston, Texas 77098} % Your address
+\address{(817)~$\cdot$~228~$\cdot$~3903 \\ cstanley@cstanley.no-ip.biz} % Your phone number and email
 
 \begin{document}
 
 
 \nocite{*}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\input{sub/education}
 
-\begin{rSection}{Education}
-{\bf Rice University} \hfill {\em May 2009} \\ 
-M.A. in Psychology with emphasis in computational cognitive modeling \\
-Thesis title: Visual Displays: Developing a Computational Model Explaining the Global Effect \\
-Advisor: Dr. Mike Byrne \\
-Overall GPA: FIXME 
+\input{sub/awards}
 
-{\bf United States Air Force Academy} \hfill {\em May 2007} \\ 
-B.S. in Physics with emphasis in applied physics and computational methods \\
-Distinguished Graduate \\
-Overall GPA: FIXME
-\end{rSection}
+\input{sub/interests}
 
-%----------------------------------------------------------------------------------------
-%	Awards SECTION
-%----------------------------------------------------------------------------------------
+\input{sub/experience}
 
-\begin{rSection}{Awards}
-Awarded United States Air Force Commendation Medal \hfill {\em May 2012}
-\item Received 'Kenneth R. Laughery Award', best master’s thesis in Psychology, Rice University \hfill {\em May 2009}
-\item Awarded 'Outstanding Cadet in Applied Physics', United States Air Force Academy \hfill {\em May 2007}
-\item Won 'Cadet Inter-Service Computer Programming Competition', USAFA \hfill {\em May 2007}
-\end{rSection}
+\input{sub/strengths}
 
-%----------------------------------------------------------------------------------------
-%	Research Interests SECTION
-%----------------------------------------------------------------------------------------
+\input{sub/service}
 
-\begin{rSection}{Research Interests}
-Human Computer Interaction, Analysis \& Modeling of Large-Scale Human Behavioral Datasets
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	Experience SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Experience}
-
-\begin{rSubsection}{Rice University, Computer Human Interaction Laboratory}{May 2012 - Aug 2012}{Research Programmer}{Houston, TX}
-\item Migrated lab's Macintosh Common Lisp GUI code to Clozure Common Lisp. 
-\item Implemented the necessary subset of Digitool's MCL GUI specification, so all MCL GUI code could be compiled by Clozure Common Lisp without any code modifications.
-\item Heavy use of Clozure's Objective-C / Cocoa bridge, CLOS and extending Clozure's easygui class, multiple inheritance / mixins, read- and compile-time macros.
-\end{rSubsection}
-
-\begin{rSubsection}{Air Force Research Laboratory, Cognitive Models and Agents}{May 2009 - May 2012}{Software Engineer and Cognitive Scientist}{Dayton, OH}
-\item Developer for the net-centric MindModeling volunteer computing research project.
-Part of small (3 person) development team that redesigned and reimplemented the entire system between 2010-2011.
-Systems-level project. 10,000+ SLOC. 10+ programming languages.
-\item Built a generic wrapper in Common Lisp that allows modelers to easily
-(within minutes) interface their model in a form that is compatible with High Performance Computing and Distributed Computing clusters.
-Codebase is used on MindModeling system.
-Successfully transitioned the code to the rest of the team before departure.
-\item Built a tool in Bash and GNU Make that automatically hardens \& certifies OS X and OpenSUSE machines to be used on the Air Force research network.
-Deployed to a production environment, and other labs are now using and contributing to the codebase.
-\end{rSubsection}
-
-\begin{rSubsection}{Rice University, Computer Human Interaction Laboratory}{May 2007 - May 2009}{Graduate Student}{Houston, TX}
-\item Explored the underlying mechanisms involved in producing various phenomena found in visual search tasks
-(e.g., distractor ratio effect, global effect) through modeling empirical data using the ACT-R cognitive architecture. 
-\end{rSubsection}
-
-\begin{rSubsection}{United States Air Force Academy, Department of Physics}{May 2006 - May 2007}{Research Assistent}{Colorado Springs, CO}
-\item Helped research, restructure, and reprogram a parallelized lightcurve inversion program developed in Matlab.
-Successfully ported and run on Hoku (Cray XD-1 Linux computing system), located at MHPCC.
-\end{rSubsection}
-
-%------------------------------------------------
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Technical Strengths}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Computer Languages & 		Common Lisp, GNU Make, Bash, Regex, R, Matlab, PHP, \\
-& 				SQL, Python \\
-Programming Paradigms &		Macros, Anaphoric/Read/Compile Macros, DSL programming, \\
-& 				object oriented, functional, HOFs, closures, declarative, \\
-&				code parallelization \& optimization \\
-Protocols \& APIs & 		ACT-R, Cocoa, BOINC, Clozure's Objective C bridge \\
-Databases &			PostgreSQL, MySQL \\
-Networking \& Infrastructure &	VMWare virtualization technologies, SAN configuration, \\
-&				Network Services: Apache, SQL, VNC, sshd, Samba \\
-Tools & 			git, Vim, command-line, High-Performance Computers, \\
-&				Jenkins, \LaTeX, FogBugz \\
-Team Processes & 		Agile, Scrum, daily standups, restrospectives, code reviews, \\
-& 				bug tracking, test-driven development \\
-Relevant Coursework &		Statistics: univariate, multivariate, psychometrics, regression \\
-&				Mathematics: e.g., partial differential equations, discrete math
-\end{tabular}
-
-\end{rSection}
-
-
-%----------------------------------------------------------------------------------------
-%	Membership & Service SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Membership \& Service}
-US Air Force Active-Duty Veteran, Captain (Sep) \hfill {\em 30 May 2007 - 31 May 2012}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	Publications SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Publications}
-
-\begin{rSubsection}{Peer-Reviewed Journals}{}{}{}
-\printbibliography[keyword=journal,heading=none]
-\end{rSubsection}
-
-\begin{rSubsection}{Conference Proceedings}{}{}{}
-\printbibliography[keyword=proceeding,heading=none]
-\end{rSubsection}
-
-\end{rSection}
+\input{sub/pubs}
 
 %\begin{rSection}{Section Name}
-
 %Section content\ldots
-
 %\end{rSection}
-
 %----------------------------------------------------------------------------------------
 
 \end{document}
