@@ -21,13 +21,29 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+% Biblatex package and dependencies
+\usepackage[american]{babel}
+%\usepackage[utf8]{inputenc}
+
+
+\usepackage{csquotes}
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[style=apa,sortcites=true,sorting=noneyear,backend=biber]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+\addbibresource{bibliography.bib}
+
+\DeclareSortingScheme{noneyear}{
+	\sort[direction=descending]{\field{year}}
+}
 
 \name{John Smith} % Your name
 \address{123 Broadway \\ City, State 12345} % Your address
 \address{(000)~$\cdot$~111~$\cdot$~1111 \\ john@smith.com} % Your phone number and email
 
 \begin{document}
+
+
+\nocite{*}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -51,11 +67,15 @@ Overall GPA: FIXME
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Awards}
-\item Awarded United States Air Force Commendation Medal \hfill {\em May 2012}
+Awarded United States Air Force Commendation Medal \hfill {\em May 2012}
 \item Received 'Kenneth R. Laughery Award', best master’s thesis in Psychology, Rice University \hfill {\em May 2009}
 \item Awarded 'Outstanding Cadet in Applied Physics', United States Air Force Academy \hfill {\em May 2007}
 \item Won 'Cadet Inter-Service Computer Programming Competition', USAFA \hfill {\em May 2007}
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Research Interests SECTION
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Research Interests}
 Human Computer Interaction, Analysis \& Modeling of Large-Scale Human Behavioral Datasets
@@ -127,8 +147,28 @@ Relevant Coursework &		Statistics: univariate, multivariate, psychometrics, regr
 
 
 %----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
+%	Membership & Service SECTION
 %----------------------------------------------------------------------------------------
+
+\begin{rSection}{Membership \& Service}
+US Air Force Active-Duty Veteran, Captain (Sep) \hfill {\em 30 May 2007 - 31 May 2012}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Publications SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\begin{rSubsection}{Peer-Reviewed Journals}{}{}{}
+\printbibliography[keyword=journal,heading=none]
+\end{rSubsection}
+
+\begin{rSubsection}{Conference Proceedings}{}{}{}
+\printbibliography[keyword=proceeding,heading=none]
+\end{rSubsection}
+
+\end{rSection}
 
 %\begin{rSection}{Section Name}
 
