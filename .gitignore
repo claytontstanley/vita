@@ -4,6 +4,7 @@
 *.pdf
 *.ttt
 *.xml
+*.out
 *.fff
 *.blg
 *.fls
