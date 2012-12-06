@@ -19,28 +19,10 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass{resume} % Use the custom resume.cls style
-
+\input{sub/docConfig}
  
-% Biblatex package and dependencies
-\usepackage[american]{babel}
-%\usepackage[utf8]{inputenc}
-\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
-
-\usepackage{csquotes}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage[style=apa,sortcites=true,sorting=noneyear,backend=biber]{biblatex}
-\DeclareLanguageMapping{american}{american-apa}
-\addbibresource{bibliography.bib}
-
-\DeclareSortingScheme{noneyear}{
-	\sort[direction=descending]{\field{year}}
-}
-
-\name{Clayton Stanley} % Your name
-\address{2440 North Boulevard \\ Houston, Texas 77098} % Your address
-\address{(817)~$\cdot$~228~$\cdot$~3903 \\ cstanley@cstanley.no-ip.biz} % Your phone number and email
-
+\input{sub/contact}
+ 
 \begin{document}
 
 \nocite{*}
