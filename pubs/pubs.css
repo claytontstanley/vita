@@ -115,3 +115,6 @@ dd.thebibliography {margin-left: 2.5em;}
 dt.thebibliography {float:left; clear:left; margin-right:1em;}
 /* end css.sty */
 
+.thebibliography {font: 75%/150% verdana, helvetica, arial, geneva, sans-serif;}
+.thebibliography A {text-decoration: none; line-height: 150%;}
+.thebibliography A:hover {text-decoration: underline}
