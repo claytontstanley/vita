@@ -1,29 +1,38 @@
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass[man]{apa6}
 
-
-% Biblatex package and dependencies
 \usepackage[american]{babel}
-%\usepackage[utf8]{inputenc}
-\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\usepackage[group-separator={,}]{siunitx}
+
+\graphicspath{{./analyzerPictures/} {./pictures/}} % Specifies the directory where pictures are stored
+
 \usepackage{csquotes}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-%\usepackage[style=apa,sortcites=true,sorting=noneyear,backend=biber]{biblatex}
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{bibliography.bib}
+
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \DeclareSortingScheme{noneyear}{
 	\sort[direction=descending]{\field{year}}
 }
+
+\title{}
+\shorttitle{}
+\author{}
+\affiliation{}
+
 
 \begin{document}
 
 \nocite{*}
 
-\begin{rSection}{Publications}
-  \begin{rSubsection}{}{}{}{}
-    \printbibliography[heading=none]
-  \end{rSubsection}
-\end{rSection}
+%\begin{rSection}{Publications}
+%  \begin{rSubsection}{}{}{}{}
+\printbibliography
+%  \end{rSubsection}
+%\end{rSection}
 
 %\begin{rSection}{Section Name}
 %Section content\ldots

@@ -90,14 +90,6 @@ div.pmatrix {text-align:center;}
 table.pmatrix {width:100%;}
 span.bar-css {text-decoration:overline;}
 img.cdots{vertical-align:middle;}
-body{margin:4em;}
-td{vertical-align:top;}
-div.name{text-align:center;}
-table.addresses{width:100%;}
-td.addresses-left{float:left;}
-td.addresses-right{float:right;}
-table.addresses div{text-align:left;}
-span.location{margin-left:2em;}
 .partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
 .index-item, .index-subitem, .index-subsubitem {display:block}
 div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:left;}
