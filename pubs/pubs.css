@@ -111,8 +111,9 @@ div.author{white-space: nowrap;}
 .abstract p {margin-left:5%; margin-right:5%;}
 div.abstract {width:100%;}
 dt.printshorthands{float:left; clear:left; margin-right:1em;}
-dd.thebibliography {margin-left: 2.5em;}
-dt.thebibliography {float:left; clear:left; margin-right:1em;}
+dd.thebibliography { text-indent: -2em; margin-left: 2em;}
+dd.thebibliography p:first-child{ text-indent: -2em; }
+dt.thebibliography{float:left; clear:left; margin-right:1em;}
 /* end css.sty */
 
 .thebibliography {font: 75%/150% verdana, helvetica, arial, geneva, sans-serif;}

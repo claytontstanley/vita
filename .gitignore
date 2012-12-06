@@ -10,6 +10,7 @@
 *.html
 *.idv
 *.log
+*.lg
 *.out
 *.pdf
 *.toc
