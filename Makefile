@@ -1,4 +1,6 @@
 
+deploy-chil-all: deploy-chil-cv deploy-chil-pubs
+
 deploy-chil-cv:
 	cd vita; latexmk -pdf
 	rsync -avze ssh vita/resume.pdf clayton@chil:/Library/WebServer/Documents/stanley/cv.pdf
