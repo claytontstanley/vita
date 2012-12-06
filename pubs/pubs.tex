@@ -1,4 +1,4 @@
-\documentclass{resume} % Use the custom resume.cls style
+\documentclass{article}
 
 
 % Biblatex package and dependencies
@@ -6,9 +6,7 @@
 %\usepackage[utf8]{inputenc}
 \usepackage[colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage{csquotes}
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-%\usepackage[style=apa,sortcites=true,sorting=noneyear,backend=biber]{biblatex}
-\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\usepackage[style=apa,sortcites=true,sorting=noneyear,backend=biber]{biblatex}
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{bibliography.bib}
 \DeclareSortingScheme{noneyear}{
@@ -16,18 +14,6 @@
 }
 
 \begin{document}
-
 \nocite{*}
-
-\begin{rSection}{Publications}
-  \begin{rSubsection}{}{}{}{}
-    \printbibliography[heading=none]
-  \end{rSubsection}
-\end{rSection}
-
-%\begin{rSection}{Section Name}
-%Section content\ldots
-%\end{rSection}
-%----------------------------------------------------------------------------------------
-
+\printbibliography[title={Publications}]
 \end{document}
