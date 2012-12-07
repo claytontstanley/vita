@@ -116,6 +116,6 @@ dd.thebibliography p:first-child{ text-indent: -2em; }
 dt.thebibliography{float:left; clear:left; margin-right:1em;}
 /* end css.sty */
 
-.thebibliography {font: 75%/150% verdana, helvetica, arial, geneva, sans-serif;}
+.thebibliography {font: 85%/150% verdana, helvetica, arial, geneva, sans-serif;}
 .thebibliography A {text-decoration: none; line-height: 150%;}
 .thebibliography A:hover {text-decoration: underline}
