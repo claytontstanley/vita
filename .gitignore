@@ -1,7 +1,10 @@
 .DS_Store
 *.aux
+*.4tc
+*.4ct
 *.bbl
 *.bcf
+*.xref
 *.blg
 *.dvi
 *.fdb_latexmk
