@@ -21,4 +21,4 @@
 *.xml
 *(Autosaved).R
 *.RData
-
+!/pdfs/*.pdf
