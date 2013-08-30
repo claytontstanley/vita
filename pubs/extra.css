@@ -1,3 +1,8 @@
 .thebibliography {font: 85%/150% verdana, helvetica, arial, geneva, sans-serif;}
 .thebibliography A {text-decoration: none; line-height: 150%;}
 .thebibliography A:hover {text-decoration: underline}
+dd.thebibliography { text-indent: -2em; margin-left: 2em;}
+dd.thebibliography p:first-child{ text-indent: -2em; }
+dt.thebibliography{float:left; clear:left; margin-right:1em;}
+.cmtt-10{font-family: monospace;}
+.small-caps{font-variant: small-caps; }
