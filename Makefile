@@ -5,4 +5,5 @@ deploy-chil-all:
 	make -C pdfs deploy-chil
 
 
-
+check-spelling:
+	find . ! -path './examples/*' -name '*.tex' -exec vi -c 'XitOrSpellCheck' '{}' \;
