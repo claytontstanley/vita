@@ -19,6 +19,7 @@
 *.toc
 *.ttt
 *.xml
+*.tmp
 *(Autosaved).R
 *.RData
 !/pdfs/*.pdf
