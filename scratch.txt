@@ -1,0 +1,5 @@
+-Dissertation research: evaluating and improving declarative memory models on large-scale datasets. Publishing results.
+-Common-Lisp developer. Maintain and improve CL technologies used by the lab to validate and explore computational cognitive models.
+-Common-Lisp developer. Develop task environments for other lab members so that they can build cognitive models and evaluate model performance vs. human performance for their research.
+
+
