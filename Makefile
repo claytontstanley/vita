@@ -8,3 +8,7 @@ deploy-chil-all:
 
 check-spelling:
 	find . ! -path './examples/*' -name '*.tex' -exec vi -c 'XitOrSpellCheck' '{}' \;
+
+build:
+	make -C vita-public build
+
